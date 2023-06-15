@@ -1,20 +1,5 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-
 .header-bg {
-  background-color: #000000;
+  background-color: var(--cor-12);
   margin: 0px;
 }
 
@@ -38,15 +23,17 @@ a{
 .header-menu a {
   padding: 16px 0px;
   display: inline-block;
-  color: #fff;
+  color: var(--cor-0);
   font-size: 18px;
   position: relative;
+  font-family: 'IBM Plex Mono';
+  font-weight: bold;
 }
 
 .header-menu a:after {
   content: "";
   display: block;
-  background-color: #fff;
+  background-color: var(--cor-0);
   height: 2px;
   width: 0px;
   margin-top: 3px;
@@ -63,12 +50,12 @@ a{
     gap: 20px;
   }
   .header-menu a {
-    background: #111;
+    background: var(--cor-11);
     padding: 16px 12px;
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background-color: #2e2e2e;
+    background-color: var(--cor-10);
     transition: .3s;
   }
   .header-menu a::after {
@@ -81,7 +68,6 @@ a{
     gap: 12px;
   }
   .header-menu a{
-    background: #111;
     padding: 8px 12px;
     border-radius: 4px;
     font-size: 14px;
