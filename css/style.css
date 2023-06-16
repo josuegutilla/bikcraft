@@ -10,5 +10,8 @@
 /* Componentes */
 @import "./utilidades/componentes.css";
 
-/* LIsta Bicicletas */
+/* Lista Bicicletas */
 @import "./bicicletas/lista-bicicleta.css";
+
+/* Tecnologia */
+@import "./home/tecnologia.css";
