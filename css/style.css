@@ -4,14 +4,13 @@
 
 @import "/css/global/header.css";
 
-/* Introdução */
-@import "./home/introducao.css";
-
-/* Componentes */
+/* Utilidades */
 @import "./utilidades/componentes.css";
+
+/* Home */
+@import "./home/introducao.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
 
 /* Lista Bicicletas */
 @import "./bicicletas/lista-bicicleta.css";
-
-/* Tecnologia */
-@import "./home/tecnologia.css";
