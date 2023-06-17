@@ -28,6 +28,7 @@
 }
 
 .seguros-item span {
+  grid-column: 2;
   display: block;
   text-align: right;
 }
@@ -51,8 +52,7 @@
 .seguros-item li::before {
   content: "";
   display: inline-block;
-  background-image: url(/img/icones/lista.svg);
-  background-repeat: no-repeat;
+  background-image: url(../../img/icones/lista.svg);
   width: 13px;
   height: 9px;
   position: absolute;
