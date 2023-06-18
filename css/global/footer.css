@@ -21,6 +21,11 @@
 
 .footer-contato li {
   margin-bottom: 16px;
+  font-family: 'IBM Plex Mono';
+}
+
+.footer-contato a {
+  font-family: 'IBM Plex Mono';
 }
 
 .footer-contato li:nth-child(even):after {
@@ -56,12 +61,17 @@
   margin-bottom: 16px;
 }
 
+.footer-informacoes a {
+  font-family: 'IBM Plex Mono';
+}
+
 @media (max-width: 800px) {
   .footer-imagem img {
     display: none;
   }
   .footer {
     grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
   }
   .footer-contato {
     grid-column: 1;
