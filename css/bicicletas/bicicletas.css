@@ -6,6 +6,10 @@
   padding-bottom: 60px;
 }
 
+#bicicleta .titulo p {
+  text-transform: uppercase;
+}
+
 .bicicleta-bg {
   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
@@ -57,22 +61,6 @@
   place-self: end;
   display: flex;
   align-items: center;
-}
-
-.bicicleta-conteudo a::after {
-  content: "";
-  display: inline-block;
-  height: 10px;
-  width: 18px;
-  margin-left: 12px;
-  transition: .2s;
-  background-image: url(../../img/icones/seta.svg);
-  background-repeat: no-repeat;
-  transition: transform 0.2s;
-}
-
-.bicicleta-conteudo a:hover::after {
-  transform: translateX(4px);
 }
 
 .bicicleta-conteudo ul {

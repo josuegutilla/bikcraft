@@ -1,33 +1,68 @@
 .container {
+  box-sizing: border-box;
   max-width: 1200px;
-  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.botao{
+.botao {
   padding: 16px 32px;
   display: inline-block;
   background: linear-gradient(#FFC800, #F2A60D);
+  color: var(--cor-12);
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  color: var(--cor-12);
-  font-size: 17px;
-  line-height: 1.33;
-  text-transform: uppercase;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
+  max-width: max-content;
+  cursor: pointer;
 }
 
 .botao:hover {
   background: linear-gradient(#FFB60D, #E59317);
 }
 
+.botaoSeta {
+  padding: 16px 32px;
+  display: inline-block;
+  background: linear-gradient(#FFC800, #F2A60D);
+  color: var(--cor-12);
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  max-width: max-content;
+  cursor: pointer;
+}
+
+.botaoSeta::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 18px;
+  margin-left: 12px;
+  transition: .2s;
+  background-image: url(../../img/icones/seta.svg);
+  background-repeat: no-repeat;
+  transition: transform 0.2s;
+}
+
+.botaoSeta:hover::after {
+  transform: translateX(4px);
+}
+
 @media (max-width: 600px) {
-  .botao {
+  .botao, .botaoSeta{
     padding: 12px 16px;
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 
